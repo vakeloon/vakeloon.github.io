@@ -1,32 +1,51 @@
 body {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Выравнивание содержимого по центру */
     align-items: center;
-    height: 100vh;
-    background-color: #222;
-    color: #fff;
+    height: 100vh; /* Устанавливаем высоту страницы на всю высоту видимой области */
+    background-color: #333;
+    margin: 0;
     font-family: Arial, sans-serif;
 }
+
+header {
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+}
+
 .slot-machine {
     text-align: center;
 }
+
 .reels {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
+
 .reel {
     width: 100px;
     height: 100px;
     margin: 0 10px;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     border-radius: 10px;
     font-size: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #444;
+    background-color: #ddd;
 }
+
 .button {
     padding: 10px 20px;
     font-size: 1.2em;
@@ -35,4 +54,9 @@ body {
     color: #000;
     border: none;
     border-radius: 5px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.5em;
 }

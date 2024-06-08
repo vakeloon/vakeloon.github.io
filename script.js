@@ -1,4 +1,13 @@
-const symbols = ['🍒', '🍋', '🔔', '🍊', '⭐', '🍉'];
+// const symbols = ['🍒', '🍋', '🔔', '🍊', '⭐', '🍉'];
+const symbols = ['🍒', '🍋', '🔔'];
+
+let username = "vakeloon"; // Здесь вы можете установить имя пользователя по умолчанию
+let balance = 1000; // Здесь вы можете установить начальный баланс
+
+function displayUserInfo() {
+    document.getElementById('username').innerText = username;
+    document.getElementById('balance').innerText = "Balance: " + balance;
+}
 
 function getRandomSymbol() {
     return symbols[Math.floor(Math.random() * symbols.length)];
@@ -28,8 +37,15 @@ function checkWin(symbol1, symbol2, symbol3) {
     if (symbol1 === symbol2 && symbol2 === symbol3) {
         result.innerText = 'You win!';
         result.style.color = 'green';
+        balance += 100; // Увеличиваем баланс на 100 при выигрыше
+        displayUserInfo(); // Обновляем информацию о пользователе
     } else {
         result.innerText = 'Try again!';
         result.style.color = 'red';
+        balance -= 10; // Уменьшаем баланс на 10 при проигрыше
+        displayUserInfo(); // Обновляем информацию о пользователе
     }
 }
+
+// Вызываем функцию displayUserInfo для отображения информации о пользователе при загрузке страницы
+displayUserInfo();
