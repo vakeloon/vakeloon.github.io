@@ -1,4 +1,4 @@
-const symbols = ['🍒', '🍋', '🔔', '🍊', '⭐', '🍉'];
+const symbols = ['🍒', '🍋', '🍊', '🍉'];
 
 function getRandomSymbol() {
     return symbols[Math.floor(Math.random() * symbols.length)];
