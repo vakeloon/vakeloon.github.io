@@ -12,7 +12,9 @@ tg.expand(); //расширяем на все окно
 //tg.MainButton.show() // показать кнопку
 //tg.MainButton.enable() // сделать активной
 
-let username = tg.initDataUnsafe.user.username; // Здесь вы можете установить имя пользователя по умолчанию
+if (tg.initDataUnsafe.user.username) {
+    let username = tg.initDataUnsafe.user.username; // Здесь вы можете установить имя пользователя по умолчанию
+}
 let balance = 1000; // Здесь вы можете установить начальный баланс
 
 
