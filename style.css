@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    text-align: center;
+}
+.header {
+    width: 100%;
+    height: 30px;
+    background: #2c3e50;
+    padding: 15px 0;
+    text-align: center;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Центрирование по вертикали */
+    gap: 20px;
+    height: 100%; /* Можно задать высоту, если нужно */
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    text-align: center;
+    margin-top: 50px; /* Добавляет отступ сверху */
+}
+
+h1 {
+    color: #2c3e50;
+}
+p {
+    font-size: 18px;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+}
+
+.product h3 {
+    color: #2c3e50;
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product button {
+    background: #2c3e50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background: #1a252f;
+}
+
+.tg-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #0088cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tg-link:hover {
+    background: #006699;
+}
+
+.active {
+    background: #006699;
+}
